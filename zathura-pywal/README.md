@@ -1,12 +1,29 @@
-# Zathura-Pywal
-![alt text](https://i.imgur.com/ETGxlfY.jpg)
-![alt text](https://i.imgur.com/qCxiPjD.png)
+# zathura-pywal
+A better version of zathura-pywal that saves settings and features alpha transparency
 
-Zathura-Pywal is a set of helper scripts that dynamically theme zathura based on colors set by [pywal](https://github.com/dylanaraps/pywal).
+![zathura-pywal](https://mcarlson.xyz/img/zathura_pywal.png)
 
+Saves old `zathurarc` as `zathurarc.bak` and themes your zathura using the pywal colors found in `~/.cache/wal/colors.sh`, placing new settings plus old settings into a new `zathurarc`. Pass in an optional alpha value between zero and one using the `-a` flag if you want a transparent background.
 
-## Installation
+This script is POSIX-compliant, meaning that it will work on any shell that supports the POSIX standards. Tested and working on bash, dash, mksh, and zsh.
 
-To install, simply move into the clone directory and run `./install.sh`
+# Installation
+```shell
+$ git clone https://github.com/mlscarlson/zathura-pywal/
+$ cd zathura-pywal
+$ sudo make install
+```
 
-You can toggle normal colors by pressing `Ctrl+r`
+# Uninstall
+```shell
+$ cd zathura-pywal
+$ sudo make uninstall
+```
+
+# Usage
+```shell
+Usage: zathura-pywal [options]
+Options:
+-a      Alpha transparency of the background (default: 1)
+-h      Display this prompt
+```
