@@ -22,4 +22,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=tiled
 
-feh --bg-fill /home/wm/wallpapers/repo/DistroTube/0045.jpg
+feh --bg-fill /home/zabit/suckless/wallpapers/repo/Wallhaven/Arch\ Logo\ 4.png
