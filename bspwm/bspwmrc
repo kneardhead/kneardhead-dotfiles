@@ -4,7 +4,9 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 bash /home/zabit/.config/polybar/launch.sh --forest &
 
 wal -R &
-bash wal --theme base16-nord &
+wal --theme base16-nord &
+
+picom &
 
 bspc monitor -d I II III IV V VI 
 
